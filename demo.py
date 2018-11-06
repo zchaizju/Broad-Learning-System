@@ -7,7 +7,7 @@ from sklearn.metrics import accuracy_score
 from broadLearning_oneShot import BroadNet
 
 # Load and process dataset
-mat = pd.read_csv('data/stock.csv')
+mat = pd.read_csv('stock.csv')
 X = mat.values[:, :-1]
 y = mat.values[:, -1].reshape(-1, 1)
 y[y=='P'] = 1
